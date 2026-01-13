@@ -74,7 +74,7 @@ animation: Fade-in 1s ease-in-out 0s 1 forwards ;
     padding: 10px 0px 10px 20px;
     border: none;
     outline: none;
-    background-color : #e5e4e3;
+    background-color: #e5e4e3;
     border-radius: 20px;
     position: relative;
 }
@@ -167,7 +167,7 @@ footer {
 }
 
 #sub-container{
-    width : 40%;
+    width: 40%;
     overflow: hidden;
     box-shadow: 5px 5px 15px 1px rgb(224, 252, 250);
 }
@@ -198,10 +198,6 @@ flex-basis: 60%;
 }
 ul li{
     color: #e5e4e3;
-}
-
-ul li span {
-left: 400%;
 }
 
 }
