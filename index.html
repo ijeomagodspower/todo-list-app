@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,710;1,710&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   </head>
+
+ <body>
+   <div id="main-container">
+    <div id="sub-container">
+        <div class="app-name">
+         <h3 id="name">
+            To-Do-List
+         </h3>
+         <img src="images/icon.png">
+        </div>
+        <div id="input-and-button">
+          <input type="text" placeholder="Add Task" id="input-task">
+          <button class="addtask" onclick="addTask()"> Add </button>
+        </div>
+        <div id="task-list">
+           <ul id="list-type">
+             <!-- <li class="task, checked">task</li>
+             <li class="task, checked">task</li>
+             <li class="task">task</li> -->
+           </ul>
+        </div>
+     </div>
+   </div>
+
+
+<footer><h4>Created by Ejwebs</h4></footer>
+
+  <script src="index.js"></script>
+    
+ </body>
+
+</html>

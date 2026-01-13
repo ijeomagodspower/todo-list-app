@@ -1,0 +1,204 @@
+.html{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg\ aqua\ mix\ \(1\).jpg);
+    background : linear-gradient(135deg);
+    margin: 0px;
+    padding: 0px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+#main-container{
+    display: flex;
+    justify-content: center;
+}
+
+#sub-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 35px;
+    padding: 0px 26px 0px 26px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    flex-wrap: wrap;
+}
+
+.app-name{
+display: flex;
+align-items: center;
+justify-content: flex-start;
+padding: 5px 0px 20px 0px;
+gap:10px;
+}
+
+.app-name img {
+width: 40px;
+animation: Fade-in 1s ease-in-out 0s 1 forwards ;
+}
+#name{
+    color: #00d80a;
+    font-family: "Robot0 Flex", sans-serif;
+    font-size: 20px;
+    animation: Fade-in 1s ease-in-out 0s 1 forwards ;
+}
+/* animation css*/
+@keyframes Fade-in {
+    0% {opacity: 0%; font-size: 0px; }
+    50% {opacity: 50%; }
+    100% {opacity: 100%; font-size: 20px;}
+}
+
+/*back to normal css*/
+
+#input-and-button{
+    width: 100%;
+    border-radius: 20px;
+    background-color : #e5e4e3;
+    display: flex;
+    justify-content: space-between;
+}
+
+#input-task{
+    width: 70%;
+    padding: 10px 0px 10px 20px;
+    border: none;
+    outline: none;
+    background-color : #e5e4e3;
+    border-radius: 20px;
+    position: relative;
+}
+
+.addtask {
+width: 15%;
+border: none;
+padding: 10px 10px 10px 10px;
+margin: 0%;
+background: #00dddc;
+border-radius: 20px;
+cursor: pointer;
+color: #ffffff;
+outline: none;
+transition: 0.3s ease-in-out 0.1s;
+}
+.addtask:hover {
+    background-color: #00d80a;
+}
+
+#task-list{
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+ul li{
+list-style: none;
+padding: 12px 0px 12px 5px;
+user-select: none;
+cursor: pointer;
+position: relative;
+display: flex;
+flex-wrap: wrap;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: -35px;
+}
+li.checked{
+    text-decoration: line-through;
+    color: #00d80a;
+}
+li.checked::before{
+background-image: url(images/check.png);
+}
+
+ul li span {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    left: 600%;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    align-self: center;
+    line-height: 40px;
+}
+ul li span:hover {
+    color: #00d80a;
+    background: #e5e4e3;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    color: #e5e4e3;
+}
+
+
+/*breakpoint for desktop */
+@media (min-width : 576px ) {
+#sub-container{
+    background-color: orangered;
+}
+#name{
+    color: #e5e4e3;
+}
+.addtask{
+    background-color: #00dddc;
+    width: 16%;
+}
+
+#sub-container{
+    width : 40%;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px 1px rgb(224, 252, 250);
+}
+#input-task{
+position: unset;
+flex-basis: 60%;
+}
+
+.addtask{
+    left: auto;
+    flex-basis: 20%;
+    left: auto;
+    position: relative;
+    font-family: "Roboto Flex", sans-serif;
+    font-weight: bold;
+    transition: 0.3s ease-in-out 0.1s;
+}
+.addtask:hover {
+    background-color: #acdb00;
+}
+#input-and-button{
+    display: flex;
+    width: 100;
+    justify-content: space-between;
+}
+.app-name{
+    padding-bottom: 50px;
+}
+ul li{
+    color: #e5e4e3;
+}
+
+
+}
