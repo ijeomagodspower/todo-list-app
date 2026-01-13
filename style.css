@@ -135,7 +135,7 @@ ul li span {
     width: 40px;
     height: 40px;
     font-size: 20px;
-    left: 300%;
+    left: 380%;
     position: absolute;
     border-radius: 50%;
     text-align: center;
@@ -200,7 +200,7 @@ ul li{
     color: #e5e4e3;
 }
 ul li span {
-left: 450%;
+left: 480%;
 }
     
 }
